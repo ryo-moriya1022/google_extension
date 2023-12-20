@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://music.yandex.ru/;"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "api.js",
+                "googleapi.js",
+                "test.js",
+                "input_web.js"
+                
+            ],
+            "matches": [
+                "https://portal.mc.chitose.ac.jp/portal2/*"
+            ]
+        }
+    ]
+}
