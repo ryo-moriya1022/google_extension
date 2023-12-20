@@ -3,14 +3,12 @@
     "name": "Hello Extensions",
     "description": "Base Level Extension",
     "version": "1.0",
+
     "background":{
         "service_worker": "background.js"
     },
     "action": {
         "default_popup": "hello.html"
-    },
-    "background":{
-        "service_worker": "background.js"
     },
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://music.yandex.ru/;"
@@ -19,7 +17,6 @@
         {
             "js": [
                 "api.js",
-                "googleapi.js",
                 "test.js",
                 "input_web.js"
                 
