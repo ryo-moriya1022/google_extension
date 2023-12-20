@@ -9,7 +9,6 @@ s_buttons.forEach(function (button) {
         const resizeTarget = document.getElementById('resizeTarget').querySelector('.mainttl2 span');
         console.log("resizeTarget:", resizeTarget.textContent);
         console.log("inputValue:", inputValue);
-        
         test();
     });
 });
