@@ -6,6 +6,9 @@
     "action": {
         "default_popup": "hello.html"
     },
+    "background":{
+        "service_worker": "background.js"
+    },
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://music.yandex.ru/;"
     },
