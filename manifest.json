@@ -4,8 +4,7 @@
     "description": "Base Level Extension",
     "version": "1.0",
     "background":{
-        "service_worker": "background.js",
-        "type":"module"
+        "service_worker": "background_t.js"
     },
     "action": {
         "default_popup": "hello.html"
@@ -24,5 +23,6 @@
                 "https://portal.mc.chitose.ac.jp/portal2/*"
             ]
         }
-    ]
+    ],
+    "host_permissions":["https://api-address/"]
 }
